@@ -1,0 +1,50 @@
+﻿@model Models.Transact
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Transact</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Compte.Libelle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Compte.Libelle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeTransaction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeTransaction)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTransact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTransact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Montant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Montant)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdTransaction }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
